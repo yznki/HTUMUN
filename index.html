@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" rel="preload" href="fonts/icomoon/style.css" />
+
+        <link rel="stylesheet" rel="preload" href="css/owl.carousel.min.css" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" rel="preload" href="css/bootstrap.min.css" />
+
+        <!-- Style -->
+        <link rel="stylesheet" rel="preload" href="css/style.css" />
+
+        <style>
+            /* CSS for the pop-up */
+            .popup {
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                bottom: -100%; /* Start below the screen */
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0; /* Ensure it appears above other content */
+                opacity: 1; /* Initially shown, but it's outside the visible area */
+                transition: bottom 0.9s ease; /* Smooth slide-up transition */
+            }
+
+            .popup-content {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+        
+           
+        
+            /* CSS to center the "Coming Soon" text in the pop-up */
+            .popup-content p {
+                text-align: center;
+                font-size: 56px;
+                margin: 0;
+                font-weight: 700;
+                font-style: italic;
+                color: white;
+                transition: 500ms; /* Smooth slide-up transition */
+                -webkit-text-stroke: 2px white;
+            }
+        </style>
+        
+
+        <title>HTUMUN</title>
+
+        <!-- Include JavaScript -->
+        <script>
+            window.onload = function () {
+                const headerContainer = document.querySelector("#header");
+                const loadingOverlay = document.createElement("div");
+                loadingOverlay.className = "loading-overlay";
+
+                // Set the spinner color using a CSS variable
+                loadingOverlay.style.setProperty(
+                    "--htumunred",
+                    ""
+                ); /* Replace #ff0000 with your desired color */
+
+                const loadingSpinner = document.createElement("div");
+                loadingSpinner.className = "spinner";
+                loadingOverlay.appendChild(loadingSpinner);
+                document.body.appendChild(loadingOverlay);
+
+                fetch("header.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        // Remove the loading overlay once the header is loaded
+                        document.body.removeChild(loadingOverlay);
+                        // Set the loaded data as the header's content
+                        headerContainer.innerHTML = data;
+
+                        // Get current URL
+                        let url = window.location.pathname;
+
+                        // Select all tab elements
+                        let navLinks = document.querySelectorAll(".nav-link");
+
+                        // Loop through all tab elements
+                        for (let i = 0; i < navLinks.length; i++) {
+                            // If the href of the tab matches the url
+                            if (navLinks[i].getAttribute("href") === url) {
+                                // Add class 'active' to the parent (li) of the a tag
+                                navLinks[i].classList.add("activeLink");
+                            }
+                        }
+                    });
+
+                    const popup = document.querySelector(".popup");
+                    const popupcontent = document.querySelector(".popup-content-p");
+                    popup.style.bottom = "0%";
+                    setTimeout(function() {
+                        popupcontent.style.color = "transparent";
+                    }, 1000);
+            };
+        </script>
+    </head>
+    <body>
+        <!-- Placeholder for the header -->
+        <!-- <div id="header"></div> -->
+
+        <!-- Pop-up content -->
+        <div class="popup">
+            <div class="popup-content">
+                <p class="popup-content-p">Coming Soon...</p>
+                <img src="HTUMUNLogo.svg" alt="">
+            </div>
+        </div>
+
+        <div
+            class="content"
+            style="
+                background-color: var(--htumunblack);
+                width: 100vw;
+                height: 100vh;
+            "
+        ></div>
+
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

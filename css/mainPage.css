@@ -1,0 +1,214 @@
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 25vh;
+    padding-bottom: 15vh;
+    font-size: 47px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heroContent .subheading {
+    font-size: 24px;
+    color: var(--htumunred);
+}
+
+.heroContent .comingSoon {
+    font-size: 60px;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 16px;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    /* padding-top: 10rem; */
+}
+
+.join-btn {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 16px 32px;
+    border: 4px solid var(--htumunred);
+    width: fit-content;
+}
+
+.join-btn:hover {
+    background-color: var(--htumunred);
+    color: white;
+}
+
+.counter-join {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcomeText {
+    text-align: justify;
+    width: 60%;
+}
+
+.welcomePic {
+    width: 35%;
+    background: #d9d9d9;
+}
+
+.welcomeContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 64px 48px;
+}
+
+.boxes {
+    width: 46%;
+    background: var(--htumunred, #991b1e);
+    padding: 24px;
+}
+
+.boxes p {
+    color: var(--white, #fff);
+}
+
+.MV {
+    display: flex;
+    justify-content: space-between;
+}
+
+.MV .boxes .MVheading {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.welcomeText .heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--black, #1e1e1e);
+    margin-bottom: 0px;
+}
+
+.welcomeText .body {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 24px;
+    color: var(--black, #1e1e1e);
+}
+
+.committees {
+    display: flex;
+    flex-direction: column;
+    background: var(--black, #1e1e1e);
+    padding: 16px 48px;
+    height: 70vh;
+    justify-content: space-between;
+}
+
+.committees .heading {
+    color: var(--white, #fff);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.committees .middleSection {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.committees .committeesSoon {
+    font-size: 72px;
+    font-weight: 700;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+    margin: 0;
+}
+
+.committees .eyesout {
+    color: var(--white, #FFF);
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    
+}
+
+.SDGs {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 48px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SDGtalk {
+    width: 48%;
+}
+
+.SDGicons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 48%;
+}
+
+.SDGicons img {
+    width: 20%;
+}
+
+.SDGs .SDGtalk .heading{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--black, #1E1E1E);
+}
+
+.SDGs .SDGtalk .body{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--black, #1E1E1E);
+}
+
+.SDGs .SDGtalk .subline{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--htumunred)
+}
+
+.footer {
+    background-color: var(--htumunblack);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 48px;
+    height: 15vh;
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: var(--white);
+}
+
+.footer .socials {
+    display: flex;
+    gap: 16px;
+}

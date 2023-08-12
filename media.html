@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" rel="preload" href="fonts/icomoon/style.css" />
+
+        <link rel="stylesheet" rel="preload" href="css/owl.carousel.min.css" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" rel="preload" href="css/bootstrap.min.css" />
+
+        <!-- Style -->
+        <link rel="stylesheet" rel="preload" href="css/style.css" />
+
+        <title>HTUMUN</title>
+
+        <!-- Include JavaScript -->
+        <script>
+            window.onload = function () {
+                const headerContainer = document.querySelector("#header");
+                const loadingOverlay = document.createElement("div");
+                loadingOverlay.className = "loading-overlay";
+
+                // Set the spinner color using a CSS variable
+                loadingOverlay.style.setProperty(
+                    "--htumunred",
+                    ""
+                ); /* Replace #ff0000 with your desired color */
+
+                const loadingSpinner = document.createElement("div");
+                loadingSpinner.className = "spinner";
+                loadingOverlay.appendChild(loadingSpinner);
+                document.body.appendChild(loadingOverlay);
+
+                fetch("header.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        // Remove the loading overlay once the header is loaded
+                        document.body.removeChild(loadingOverlay);
+                        // Set the loaded data as the header's content
+                        headerContainer.innerHTML = data;
+
+                        // Get current URL
+                        let url = window.location.pathname;
+
+                        // Select all tab elements
+                        let navLinks = document.querySelectorAll(".nav-link");
+
+                        // Loop through all tab elements
+                        for (let i = 0; i < navLinks.length; i++) {
+                            // If the href of the tab matches the url
+                            if (navLinks[i].getAttribute("href") === url) {
+                                // Add class 'active' to the parent (li) of the a tag
+                                navLinks[i].classList.add("activeLink");
+                            }
+                        }
+                    });
+            };
+        </script>
+    </head>
+    <body>
+        <!-- Placeholder for the header -->
+        <div id="header"></div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
