@@ -58,7 +58,7 @@
               </li>
             </ul>
 
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item register-btn">
                 <a class="" href="comingsoon.html">Register Now!</a>
               </li>
