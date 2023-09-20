@@ -24,8 +24,8 @@
 
 	<style>
 		body {
-			min-width: 100vw;
-			height: 100vh;
+			width: 100vw;
+			min-height: 100vh;
 		}
 	</style>
 
@@ -84,7 +84,6 @@
 
 
 	<div class="container-fluid col-lg-12 bg-img pb-3" style="  background-image: url(HeroBanner.png);">
-
 		<div class="container-fluid heroContent">
 			<div class="row align-center mx-0">
 				<p class="col-lg-12 white-heading mb-0 px-0">AlHussein Technical University<br />Model United Nations</p>
@@ -96,20 +95,20 @@
 					Event begins in
 				</p>
 				<div class="container">
-					<div class="row mx-0 counter-box-collective">
-						<div class="container p-3 col-lg-2 col-md-4 mx-1 counter-info">
+					<div class="row mx-0 counter-box-collective counterdiv">
+						<div class=" counter-info">
 							<p class="counter-number">122</p>
 							<p class="counter-text mb-0">Days</p>
 						</div>
-						<div class="container p-3 col-lg-2 col-md-4 mx-1 counter-info">
+						<div class=" counter-info">
 							<p class="counter-number">16</p>
 							<p class="counter-text mb-0">Hours</p>
 						</div>
-						<div class="container p-3 col-lg-2 col-md-4 mx-1 counter-info">
+						<div class=" counter-info">
 							<p class="counter-number">32</p>
 							<p class="counter-text mb-0">Minutes</p>
 						</div>
-						<div class="container p-3 col-lg-2 col-md-4 mx-1 counter-info">
+						<div class=" counter-info">
 							<p class="counter-number">17</p>
 							<p class="counter-text mb-0">Seconds</p>
 						</div>
@@ -131,7 +130,7 @@
 	</div>
 	<!-- Content Down Here -->
 
-	<div class="container-fluid p-3">
+	<div class="container-fluid">
 		<div class="row">
 			<!-- <div class="welcomeContent"> -->
 			<div class="welcomeText col-xl-8 col-lg-12 col-md-12 my-2">
@@ -149,16 +148,16 @@
 					</p>
 				</div>
 
-				<div class="container">
+				<div class="">
 					<div class="row">
-						<div class="boxes col-lg-5 col-md-11 mx-auto my-2">
+						<div class="boxes col-lg-5 col-md-11 mx-3 my-2">
 							<p class="MVheading">Vision</p>
 							<p>
 								To build the core of a solution-driven generation, ready to
 								tackle the future’s biggest challenges.
 							</p>
 						</div>
-						<div class="boxes col-lg-5 col-md-11 mx-auto my-2 ">
+						<div class="boxes col-lg-5 col-md-11 mx-3 my-2 ">
 							<p class="MVheading">Mission</p>
 							<p>
 								Fostering an environment that nurtures innovation, promotes
@@ -170,16 +169,16 @@
 					</div>
 				</div>
 				<br />
-				<div class="row">
+				<!-- <div class="row">
 					<a class="join-btn col-lg-4 col-md-6 mx-auto hide-in-sm-devices" href="/register">Call to Action</a>
-				</div>
+				</div> -->
 			</div>
-			<div class="container col-xl-4 col-lg-12 col-md-12 align-center">
+			<div class="col-xl-4 col-lg-12 col-md-12 align-center">
 
 				<div class="row">
-					<a class="join-btn col-lg-4 col-md-5 col-sm-12 mx-auto my-auto hide-in-lg-devices" href="/register">Call to Action</a>
+					<!-- <a class="join-btn col-lg-4 col-md-5 col-sm-12 mx-auto my-auto hide-in-lg-devices" href="/register">Call to Action</a> -->
 					<!-- <img src="images/hero_3.jpg" alt="" class="welcome-img mx-auto "> -->
-					<div class="welcome-img mx-auto my-4"></div>
+					<div class="welcome-img mt-4 hide-in-sm-devices"></div>
 				</div>
 			</div>
 		</div>
@@ -216,10 +215,10 @@
 			<div class="col-xl-6 col-lg-8 col-sm-12 SDGicons mx-lg-auto">
 				<div class="row ">
 
-					<img src="SDGs/SDG4.svg" alt="" class="sdg-img col-md-3 my-2 mx-auto" />
-					<img src="SDGs/SDG5.svg" alt="" class="sdg-img col-md-3 my-2 mx-auto" />
-					<img src="SDGs/SDG16.svg" alt="" class="sdg-img col-md-3 my-2 mx-auto" />
-					<img src="SDGs/SDG17.svg" alt="" class="sdg-img col-md-3 my-2 mx-auto" />
+					<img src="SDGs/SDG4.svg" alt="" class="sdg-img col-md-3 my-2" />
+					<img src="SDGs/SDG5.svg" alt="" class="sdg-img col-md-3 my-2" />
+					<img src="SDGs/SDG16.svg" alt="" class="sdg-img col-md-3 my-2" />
+					<img src="SDGs/SDG17.svg" alt="" class="sdg-img col-md-3 my-2" />
 				</div>
 
 			</div>

@@ -9,6 +9,16 @@ body {
   transition: all 0.5s;
 }
 
+/* CSS for 1:1 aspect ratio counter boxes */
+.counter-info {
+  width: 160px !important; 
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .heroContent {
   /* display: flex;
   flex-direction: column;
@@ -59,7 +69,7 @@ font-weight: 600;
   color: #fff;
 }
 .counter-info {
-border: solid 5px #fff;}
+border: solid 4px #fff;}
 .counter-number{
 font-size: 3.4rem;
 font-weight: 600;
@@ -147,7 +157,8 @@ color: #991b1e;
 .boxes {
   /* width: 46%; */
   background: var(--htumunred, #991b1e);
-  padding: 24px;
+  padding: 32px;
+  height: min-content;
 }
 
 .boxes p {
@@ -316,7 +327,14 @@ color: #991b1e;
   .counter-box-collective{
     justify-content: center;
   }
+  .sdg-img {
+    width: 50% !important;
+    height: auto;
+  }
 
+  .counter-info{
+    width: 46% !important;
+  }
 
 
 
@@ -345,13 +363,13 @@ color: #991b1e;
   }
   .welcome-img {
     height: 290px;
-    width: 250px;
+    width: 100vw;
   }
 }
 
 @media (max-width: 576px) {
   .heroContent .white-heading {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
   }
   .heroContent .red-heading {
     font-weight: 500;
@@ -367,7 +385,7 @@ color: #991b1e;
   }
   .committees .heading {
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
   }
   .committees .committeesSoon {
     font-size: 3rem;
@@ -379,14 +397,14 @@ color: #991b1e;
   }
   .SDGtalk .heading {
     font-size: 1.6rem;
-    text-align: center;
+    text-align: left;
   }
   .SDGtalk .body,
   .SDGtalk .subline {
     font-size: 0.95rem;
   }
   .sdg-img {
-    width: 70% !important;
+    width: 50% !important;
     height: auto;
   }
   .footer .socials {
@@ -396,4 +414,30 @@ color: #991b1e;
   .footer .copyright p{
     text-align: center;
   }
+
+  .counter-number {
+    font-size: 2.5rem;
+  }
+  .counter-info {
+    width: 44% !important; 
+  }
+}
+
+
+@media (max-width: 413px) {
+
+  
+
+  .counter-number {
+    font-size: 2rem;
+  }
+
+
+}
+
+.counterdiv {
+
+  display: flex;
+  gap: 32px;
+
 }
