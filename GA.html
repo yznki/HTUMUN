@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <!-- Required meta tags -->
@@ -23,41 +24,7 @@
 
         <!-- Style -->
         <link rel="stylesheet" rel="preload" href="css/style.css" />
-
-        <style>
-            /* CSS for the pop-up */
-            .popup {
-                position: fixed;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                bottom: -100%; /* Start below the screen */
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 0; /* Ensure it appears above other content */
-                opacity: 1; /* Initially shown, but it's outside the visible area */
-                transition: bottom 0.9s ease; /* Smooth slide-up transition */
-            }
-        
-           
-        
-            /* CSS to center the "Coming Soon" text in the pop-up */
-            .popup-content p {
-                text-align: center;
-                font-size: 56px;
-                margin: 0;
-                font-weight: 700;
-                font-style: italic;
-                color: white;
-                transition: 500ms; /* Smooth slide-up transition */
-                -webkit-text-stroke: 2px white;
-            }
-        </style>
-        
-
         <title>HTUMUN</title>
-
         <!-- Include JavaScript -->
         <script>
             window.onload = function () {
@@ -99,37 +66,23 @@
                             }
                         }
                     });
-
-                    const popup = document.querySelector(".popup");
-                    const popupcontent = document.querySelector(".popup-content-p");
-                    popup.style.bottom = "0%";
-                    setTimeout(function() {
-                        popupcontent.style.color = "transparent";
-                    }, 1000);
             };
         </script>
     </head>
     <body>
-
         <!-- Placeholder for the header -->
         <div id="header"></div>
-
-        <!-- Pop-up content -->
-        <div class="popup">
-            <div class="popup-content">
-                <p class="popup-content-p">Coming Soon...</p>
-            </div>
-        </div>
 
         <div
             class="content"
             style="
                 background-color: var(--htumunblack);
                 width: 100vw;
-                height: 100vh;
+                height: 40vh;
             "
         ></div>
 
+        <div style="color: black;">General Assembly</div>
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>
