@@ -30,7 +30,7 @@
 	</style>
 
 	<!-- Include JavaScript -->
-	<!-- <script>
+	<script>
       window.onload = function () {
         const headerContainer = document.querySelector("#header");
         const loadingOverlay = document.createElement("div");
@@ -68,8 +68,8 @@
             //     }
             // }
           });
-      }; -->
-	<!-- </script> -->
+      };
+	</script>
 </head>
 
 <body>
@@ -141,19 +141,19 @@
 				<div class="container">
 					<div class="row mx-0 counter-box-collective counterdiv">
 						<div class=" counter-info">
-							<p class="counter-number">122</p>
+							<p class="counter-number" id="days"></p>
 							<p class="counter-text mb-0">Days</p>
 						</div>
 						<div class=" counter-info">
-							<p class="counter-number">16</p>
+							<p class="counter-number" id="hours"></p>
 							<p class="counter-text mb-0">Hours</p>
 						</div>
 						<div class=" counter-info">
-							<p class="counter-number">32</p>
+							<p class="counter-number" id="minutes"></p>
 							<p class="counter-text mb-0">Minutes</p>
 						</div>
 						<div class=" counter-info">
-							<p class="counter-number">17</p>
+							<p class="counter-number" id="seconds"></p>
 							<p class="counter-text mb-0">Seconds</p>
 						</div>
 					</div>
@@ -340,6 +340,8 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/countdown.js"></script>
+
 </body>
 
 </html>
