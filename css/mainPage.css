@@ -62,7 +62,12 @@ body {
   flex-direction: row;
 }
 
+.welcome-img {
 
+  background-image: url(/4.JPG);
+  background-size: cover;
+
+}
 
 
 .counter-heading{
@@ -199,7 +204,7 @@ color: #991b1e;
   /* width: 450px; */
   background-color: #991b1e;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
   .hide-in-sm-devices {
     display: none;
   }
