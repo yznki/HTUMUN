@@ -50,7 +50,6 @@
                     .then((response) => response.text())
                     .then((data) => {
                         // Remove the loading overlay once the header is loaded
-                        document.body.removeChild(loadingOverlay);
                         // Set the loaded data as the header's content
                         headerContainer.innerHTML = data;
 
@@ -68,6 +67,7 @@
                                 navLinks[i].classList.add("activeLink");
                             }
                         }
+                        document.body.removeChild(loadingOverlay);
                     });
       };
 	</script>
