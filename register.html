@@ -23,8 +23,9 @@
         <link rel="stylesheet" rel="preload" href="css/bootstrap.min.css" />
 
         <!-- Style -->
-        <link rel="stylesheet" rel="preload" href="css/style.css" />
-        <link rel="stylesheet" rel="preload" href="css/register.css" />
+        <link rel="stylesheet" rel="preload" href="css/style.css?foo=1" />
+        <link rel="stylesheet" rel="preload" href="css/register.css?foo=2" />
+        <link rel="stylesheet" href="css/mainPage.css?foo=3" />
         <title>HTUMUN - Register</title>
         <!-- Include JavaScript -->
         <script>
@@ -50,13 +51,13 @@
                         // Remove the loading overlay once the header is loaded
                         // Set the loaded data as the header's content
                         headerContainer.innerHTML = data;
-                        
+
                         // Get current URL
                         let url = window.location.pathname;
-                        
+
                         // Select all tab elements
                         let navLinks = document.querySelectorAll(".nav-link");
-                        
+
                         // Loop through all tab elements
                         for (let i = 0; i < navLinks.length; i++) {
                             // If the href of the tab matches the url
@@ -84,29 +85,41 @@
             "
         ></div>
 
-        <div class="heading" style="color: black;"> Register Now!</div>
-        <div class="subheading" style="color: black;">Register Now and Be a Part of Shaping the Future: Join Our Model United Nations Conference as We Envision a New Era of Global Cooperation and Diplomacy!</div>
+        <div class="heading" style="color: black">Register Now!</div>
+        <div class="subheading" style="color: black">
+            Register Now and Be a Part of Shaping the Future: Join Our Model
+            United Nations Conference as We Envision a New Era of Global
+            Cooperation and Diplomacy!
+        </div>
 
         <div class="registerlinks">
             <div class="application">
                 <p>Chair Applications</p>
-                <img class="linkimg" src="img/chairs.JPG" alt="">
-                <div class="link"> <a href="comingsoon">Chair Application</a></div>
+                <img class="linkimg" src="img/chairs.JPG" alt="" />
+                <div class="link">
+                    <a href="comingsoon">Chair Application</a>
+                </div>
             </div>
             <div class="application">
                 <p>Delegate Applications</p>
-                <img class="linkimg" src="img/delegates.JPG" alt="">
-                <div class="link"> <a href="comingsoon">Delegate Application</a></div>
+                <img class="linkimg" src="img/delegates.JPG" alt="" />
+                <div class="link">
+                    <a href="comingsoon">Delegate Application</a>
+                </div>
             </div>
             <div class="application">
                 <p>Media Applications</p>
-                <img class="linkimg" src="img/media.JPG" alt="">
-                <div class="link"> <a href="comingsoon">Media Application</a></div>
+                <img class="linkimg" src="img/media.JPG" alt="" />
+                <div class="link">
+                    <a href="comingsoon">Media Application</a>
+                </div>
             </div>
             <div class="application">
                 <p>Staff Applications</p>
-                <img class="linkimg" src="img/staff.JPG" alt="">
-                <div class="link"> <a href="comingsoon">Staff Application</a></div>
+                <img class="linkimg" src="img/staff.JPG" alt="" />
+                <div class="link">
+                    <a href="comingsoon">Staff Application</a>
+                </div>
             </div>
         </div>
 
