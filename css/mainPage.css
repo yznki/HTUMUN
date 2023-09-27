@@ -435,6 +435,11 @@ color: #991b1e;
   .counter-info {
     width: 44% !important; 
   }
+
+  .bg-img {
+    background-position: 40%;
+  }
+
 }
 
 
