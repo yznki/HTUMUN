@@ -212,18 +212,16 @@ color: #991b1e;
     height: 400px;
     width: 350px;
   }
+
+  
 }
-@media (min-width: 1200px) {
-  .hide-in-lg-devices {
-    display: none;
-  }
-}
+
 .committees {
   display: flex;
   flex-direction: column;
   background: var(--black, #1e1e1e);
-  padding: 16px 48px;
-  height: 70vh;
+  padding: 16px 0px;
+  height: fit-content;
   justify-content: space-between;
 }
 
@@ -234,6 +232,13 @@ color: #991b1e;
   font-weight: 700;
   line-height: normal;
 }
+
+.boxHeading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .committees .middleSection {
   display: flex;
   gap: 0px;
@@ -448,5 +453,50 @@ color: #991b1e;
 
   display: flex;
   gap: 32px;
+
+}
+
+.normalCommittees {
+
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.committee {
+
+  width:100%;
+
+}
+
+.special {
+
+  font-style: italic !important;
+  font-weight: 800 !important;
+  padding-top: 5vw;
+  margin-bottom: 0;
+}
+
+@media (min-width: 750px) {
+  .normalCommittees {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .committee {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hide-in-lg-devices {
+    display: none;
+  }
+
+  .committee {
+    width: 20%;
+  }
 
 }
