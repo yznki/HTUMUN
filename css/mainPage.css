@@ -470,7 +470,7 @@ color: #991b1e;
 
 }
 
-.committee {
+.committeeLogoIndex {
 
   width:100%;
 
@@ -490,17 +490,30 @@ color: #991b1e;
     justify-content: center;
   }
   
-  .committee {
+  .committeeLogoIndex {
     width: 33.3%;
   }
 }
 
+.committeeLogoIndex {
+  filter: grayscale(0);
+}
+
+.committeeLogoIndex:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+}
+
 @media (min-width: 1200px) {
+  .committeeLogoIndex {
+    filter: grayscale(1);
+  }
+
   .hide-in-lg-devices {
     display: none;
   }
 
-  .committee {
+  .committeeLogoIndex {
     width: 20%;
   }
 

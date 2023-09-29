@@ -1,3 +1,7 @@
+.content {
+    align-items: end;
+}
+
 .committee {
 
     justify-content: right;

@@ -113,3 +113,43 @@ h1 {
     gap: 0.5rem;
     margin-bottom: 3rem;
 }
+
+@media only screen and (min-width: 1200px) {
+
+    .title {
+
+        font-size: 2rem;
+
+    }
+
+    .committee {
+        width: 100% !important;
+    }
+
+    .committeeLogo {
+        width: 15%;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .panel {
+        width: 30%;
+    }
+
+    .chairs {
+
+        justify-content: space-between;
+
+    }
+
+    .panel:nth-child(1) {
+        order: 0;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+}
