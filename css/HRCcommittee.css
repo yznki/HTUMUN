@@ -1,0 +1,36 @@
+.committee {
+
+    justify-content: right;
+
+}
+
+.title {
+
+    font-size: 2rem;
+
+}
+
+p, h1 {
+
+    text-align: right;
+
+}
+
+button {
+    width: fit-content;
+}
+
+.firstTopic, .secondTopic {
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.topicguide i {
+
+    padding-left: 0;
+    padding-right: 0.5rem;
+
+}

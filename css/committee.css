@@ -1,0 +1,115 @@
+.committee {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+}
+
+.committeeLogo {
+    width: 35%;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.desc {
+    padding: 0rem 1rem;
+}
+
+.desc p {
+    color: black;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0rem 1rem;
+}
+
+.topicName {
+    font-weight: 500;
+    color: var(--htumunred);
+}
+
+.topicDesc {
+    color: var(--htumunblack);
+}
+
+.topicguide {
+    padding: 1rem 2rem;
+    background-color: var(--htumunred);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+}
+
+.topicguide i {
+    padding-left: 0.5rem;
+}
+
+.chairingPanel, .countries {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 0rem 1rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.chairs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.panel {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.panel p {
+    margin: 0;
+}
+
+.name {
+    /* color: var(--htumunblack); */
+    font-style: italic;
+}
+
+.position {
+    color: var(--htumunblack);
+}
+
+.panel:nth-child(1) {
+    order: 2;
+}
+
+.countries {
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+}
