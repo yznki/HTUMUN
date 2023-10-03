@@ -268,3 +268,8 @@ hr.solid {
     border-top: 3px solid #bbb;
     margin: 0.5rem;
 }
+.dropdown-item:hover {
+
+    background: var(--htumunred) !important;
+
+}
