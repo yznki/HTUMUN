@@ -6,6 +6,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
         <link
             href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap"
@@ -21,8 +22,9 @@
 
         <!-- Style -->
         <link rel="stylesheet" rel="preload" href="css/style.css" />
+        <link rel="stylesheet" href="css/legacy.css" />
 
-        <title>HTUMUN</title>
+        <title>HTUMUN - Legacy</title>
 
         <!-- Include JavaScript -->
         <script>
@@ -67,10 +69,107 @@
                     });
             };
         </script>
+
+        <style>
+            #container {
+                scroll-snap-points-y: repeat(100vh);
+                scroll-snap-type: y mandatory;
+                width: 100vw;
+                height: 100vh;
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+
+            body {
+                overflow: hidden;
+                height: 100vh;
+            }
+
+            .block {
+                height: 100vh;
+                scroll-snap-align: start;
+                position: relative;
+                overflow: scroll;
+                padding: 0 2rem;
+            }
+        </style>
     </head>
     <body>
         <!-- Placeholder for the header -->
         <div id="header"></div>
+        <div id="container">
+            <div class="block hero">
+                <p class="legacy">HTUMUN <span style="color: var(--htumunred);">Legacy</span></p>
+                <p class="scroll">Scroll down to find more!</p>
+            </div>
+            <div class="block htumun23" style="padding-top: 15vh;">
+                <h1>HTUMUN'23</h1>
+                <p class="teamName">Secretary General's Office</p>
+                <div class="level">
+                    <div class="SG member">
+                        <img class="memberPic" src="/img/teamPics/Besher.png" alt="">
+                        <p class="name">Besher Najem</p>
+                        <p class="role">President / Secretary General</p>
+                    </div>
+                    <div class="DSG member">
+                        <img class="memberPic" src="/img/teamPics/Makram.png" alt="">
+                        <p class="name">Makram El Jamal</p>
+                        <p class="role">Deputy Secretary General</p>
+                    </div>
+                </div>
+                <p class="teamName">Conference Committee</p>
+                <div class="level">
+                    <div class="HOD member">
+                        <img class="memberPic" src="/img/teamPics/Hasan.png" alt="">
+                        <p class="name">Hassan Maghareez</p>
+                        <p class="role">Head of Debate</p>
+                    </div>
+                    <div class="DHOD member">
+                        <img class="memberPic" src="img/teamPics/Omar.png" alt="">
+                        <p class="name">Omar Alaween</p>
+                        <p class="role">Deputy Head of Debate</p>
+                    </div>
+                    <div class="HOC member">
+                        <img class="memberPic" src="img/teamPics/Rashed.png" alt="">
+                        <p class="name">Rashed Msallam</p>
+                        <p class="role">Head of Conference</p>
+                    </div>
+                </div>
+                <p class="teamName">Media Team</p>
+                <div class="level">
+                    <div class="HOM member">
+                        <img class="memberPic" src="/img/teamPics/Yazan.png" alt="">
+                        <p class="name">Yazan Al Kiswani</p>
+                        <p class="role">Head of Media</p>
+                    </div>
+                    <div class="DHOM member">
+                        <img class="memberPic" src="img/teamPics/Lana.png" alt="">
+                        <p class="name">Lana Hatabeh</p>
+                        <p class="role">Deputy Head of Media</p>
+                    </div>
+                </div>
+                <p class="teamName">Adminstration Team</p>
+                <div class="level">
+                    <div class="HOA member">
+                        <img class="memberPic" src="/img/teamPics/Salam.png" alt="">
+                        <p class="name">Salam Kanaan</p>
+                        <p class="role">Head of Adminstration</p>
+                    </div>
+                    <div class="HOL member">
+                        <img class="memberPic" src="img/teamPics/Mayar.png" alt="">
+                        <p class="name">Mayar Abulatifeh</p>
+                        <p class="role">Head of Logistics</p>
+                    </div>
+                    <div class="HOS member">
+                        <img class="memberPic" src="img/teamPics/Salma.png" alt="">
+                        <p class="name">Salma Al Muhtaseb</p>
+                        <p class="role">Head of Staff</p>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div class="block htumun19"></div> -->
+        </div>
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>

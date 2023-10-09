@@ -1,0 +1,96 @@
+.hero {
+    background-image: url(/img/htumun23team.jpeg);
+    background-position: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero p {
+    color: white;
+}
+
+.legacy {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.scroll {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.htumun23 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--htumunblack);
+}
+
+h1 {
+    color: white;
+    font-weight: 800;
+}
+
+.teamName {
+    font-weight: 600;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.level {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: start;
+}
+
+.member {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.member img {
+    width: 85%;
+    aspect-ratio: 1/1;
+}
+
+.name {
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.role {
+    color: white;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .legacy {
+        font-size: 4rem;
+    }
+    
+    .level {
+
+        justify-content: space-around;
+
+    }
+
+    .member {
+        width: 30%;
+    }
+
+}
