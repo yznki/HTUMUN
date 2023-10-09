@@ -82,19 +82,14 @@ h1 {
     .member {
         width: 30%;
     }
-
-}
-
-@media screen and (min-width: 1200px) {
-
-    .legacy {
-        font-size: 4rem;
-    }
-    
     .level {
 
         justify-content: space-around;
 
+    }
+
+    .legacy {
+        font-size: 4rem;
     }
 
 }
