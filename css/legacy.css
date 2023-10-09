@@ -77,6 +77,14 @@ h1 {
     font-size: 1rem;
 }
 
+@media screen and (min-width: 750px) {
+
+    .member {
+        width: 30%;
+    }
+
+}
+
 @media screen and (min-width: 1200px) {
 
     .legacy {
@@ -87,10 +95,6 @@ h1 {
 
         justify-content: space-around;
 
-    }
-
-    .member {
-        width: 30%;
     }
 
 }
