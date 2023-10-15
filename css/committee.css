@@ -90,6 +90,8 @@ h1 {
 .panel img {
     width: 100%;
     margin-bottom: 1rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .panel p {
@@ -97,8 +99,8 @@ h1 {
 }
 
 .name {
-    /* color: var(--htumunblack); */
-    font-style: italic;
+    color: var(--htumunred);
+    /* font-style: italic; */
 }
 
 .position {
