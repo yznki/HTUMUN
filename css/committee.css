@@ -116,6 +116,21 @@ h1 {
     margin-bottom: 3rem;
 }
 
+.countrieslist {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 0.6rem;
+
+}
+
+.countrieslist img {
+    width: 10%;
+}
+
 @media only screen and (min-width: 1200px) {
 
     .title {
