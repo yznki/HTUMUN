@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Set the date we're counting down to
     var year = new Date().getFullYear(); // Get the current year
-    var countDownDate = new Date(year, 9, 19).getTime(); // Months are 0-indexed in JavaScript, so October is 9
+    var countDownDate = new Date(year, 11, 7).getTime(); // Months are 0-indexed in JavaScript, so October is 9
   
     // Update the countdown every 1 second
     var x = setInterval(function() {
