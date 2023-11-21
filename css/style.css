@@ -273,3 +273,9 @@ hr.solid {
     background: var(--htumunred) !important;
 
 }
+
+.panel img {
+
+    border-radius: 50%;
+    
+}
